@@ -1,6 +1,6 @@
 
 <?php
-    //Get and App and username in Kipochi to get an API KEY
+    //Create an App in Kipochi merchants to get your API KEY
     
     $username="APP_USERNAME";
     
