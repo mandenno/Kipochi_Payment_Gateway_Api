@@ -1,21 +1,19 @@
 <?php
         include_once('KipochiPaymentGateway.php');  
        
-         //Create a Merchant account at https://Kipochi.angani.co
-    
-        $username="Your_Kipochi_username";
-
-        $apiKey = "Your_Kipochi_api"; 
+        $apiKey="API_KEY";//Merchant's API KEY
         
-        $callbackURL="YOUR_CALLBACK_URL_HERE"; //Callback URL to receive payment response
+        $username="API_USERNAME"; //Merchant's API USERNAME
         
-        $amount = "1"; //Amount to be paid
+        $callbackURL="CALLBACK_URL"; //Callback URL to receive payment response
         
-        $phoneNumber = "254xxxxxxxxx";//phone number (in internation format) to receive payment request
-        $merchant_reference="Merchant_reference_number";
+        $amount = "100"; //Amount to be paid
+        
+        $phoneNumber = "254721XXXXXX";//phone number (in internation format) to receive payment request
+      
         $gway = new STKPUSH();
        
-        $response = $gway->sendSTKpushRequest($apiKey, $username, $amount, $phoneNumber, $callbackURL,         $merchant_reference);
+        $response = $gway->sendSTKpushRequest($apiKey, $username, $amount, $phoneNumber, $callbackURL);
        
         echo $response;
         
