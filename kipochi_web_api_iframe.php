@@ -1,6 +1,6 @@
 
 <?php
-    //Create an App in Kipochi merchants to get your API KEY
+    //Get and App and username in Kipochi to get an API KEY
     
     $username="APP_USERNAME";
     
@@ -16,6 +16,9 @@
     
     $fail_url = "FAILURE_CALLBACK_URL"; //URL called when the transaction is unsuccessful
 
+
+    $accountName="PAYBILL_ACCOUNT_NO";//set the paybill account no
+    
     // Set any metadata that you would like to send along with this request.
     // ONLY change the values XXX and YYY.
     
@@ -26,6 +29,7 @@
         'username'    =>$username,
         'apikey'      =>$apiKey,
         'amount'      =>$amount,
+        'accountName' =>$accountName,
         'success_url' =>$success_url,
         'fail_url'    =>$fail_url,
         'extra1'   => $extra1,
