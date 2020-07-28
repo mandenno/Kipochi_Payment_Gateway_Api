@@ -4,16 +4,18 @@
         $apiKey="API_KEY";//Merchant's API KEY
         
         $username="API_USERNAME"; //Merchant's API USERNAME
+     
+        $amount = "10"; //Amount to be paid
         
-        $callbackURL="CALLBACK_URL"; //Callback URL to receive payment response
+        $accountName = "ACCOUNT_REFERENCE_NAME"; //set reference name
         
-        $amount = "100"; //Amount to be paid
+        $phoneNumber = "2547xxxxxxxx";//phone number (in internation format) to receive payment request
         
-        $phoneNumber = "254721XXXXXX";//phone number (in internation format) to receive payment request
-      
+        $referenceNumber ="xxxx";//set a reference number
+        
         $gway = new STKPUSH();
        
-        $response = $gway->sendSTKpushRequest($apiKey, $username, $amount, $phoneNumber, $callbackURL);
+        $response = $gway->sendSTKpushRequest($apiKey, $username, $accountName, $amount, $phoneNumber);
        
         echo $response;
         
