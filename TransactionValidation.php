@@ -5,7 +5,7 @@
         
         $username="USERNAME"; //Merchant's API USERNAME'
 		
-		    $transId="TRANSACTION_CODE";//transaction ID to query
+	$transId="TRANSACTION_CODE";//transaction ID to query
       
         $gway = new KPG();
        
