@@ -13,7 +13,7 @@
 
         $extra2 ="1063";//set a reference number 2
         
-        $phoneNumber = "PHONE_NUMBER";//phone number (in internation format) to receive payment request
+        $phoneNumber = "254xxxxxxxxx";//phone number (in internation format) to receive payment request
       
         $gway = new KPG();
        
