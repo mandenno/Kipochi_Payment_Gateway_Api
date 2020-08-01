@@ -6,8 +6,11 @@
         $username="API_USERNAME"; //Merchant's API USERNAME
      
         $amount = "10"; //Amount to be paid
+
         $accountName = "ACCOUNT_NAME"; //Paybill account Name
+
         $extra1 ="1062";//set a reference number 1
+
         $extra2 ="1063";//set a reference number 2
         
         $phoneNumber = "PHONE_NUMBER";//phone number (in internation format) to receive payment request
