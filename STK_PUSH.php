@@ -6,22 +6,18 @@
         $username="API_USERNAME"; //Merchant's API USERNAME
      
         $amount = "10"; //Amount to be paid
+        $accountName = "ACCOUNT_NAME"; //Paybill account Name
+        $extra1 ="1062";//set a reference number
+        $extra2 ="1063";//set a reference number 
         
-        $accountName = "ACCOUNT_REFERENCE_NAME"; //set reference name
-        
-        $phoneNumber = "2547xxxxxxxx";//phone number (in internation format) to receive payment request
-        
-        $referenceNumber ="xxxx";//set a reference number
-        
-        $gway = new STKPUSH();
+        $phoneNumber = "PHONE_NUMBER";//phone number (in internation format) to receive payment request
+      
+        $gway = new KPG();
        
-        $response = $gway->sendSTKpushRequest($apiKey, $username, $accountName, $amount, $phoneNumber);
+        $response = $gway->sendSTKpushRequest($apiKey, $username, $accountName, $amount, $phoneNumber, $extra1, $extra2);
        
         echo $response;
-        
-        //Handle the JSON response from gateway
-        //{"status":"success", "message":"Success. Request accepted for processing"}
-        //{"status":"error", "errorMessage":"error message"}
+       
        
 
 ?>
